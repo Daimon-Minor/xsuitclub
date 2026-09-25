@@ -3,84 +3,712 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>X Suit Club — 1111 pixel-art suit guys with X-logo eyes</title>
+<title>X Suit Club — 1111 pixel suits, X for eyes</title>
+<meta name="description" content="Browse all 1111 hand-authored 64x64 pixel-art suit characters with X-logo eyes. Real trait counts, rarity ranks and every asset file.">
+<meta name="theme-color" content="#0A0D13">
+<meta property="og:title" content="X Suit Club">
+<meta property="og:description" content="1111 hand-authored 64x64 pixel suits, X for eyes.">
+<meta property="og:image" content="https://daimon-minor.github.io/xsuitclub/png/collection.png">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Pixelify+Sans:wght@500;600&display=swap">
 <style>
-  :root{--bg:#0d1117;--fg:#e6edf3;--dim:#8b949e;--x:#1d9bf0;--card:#161b22;--line:#30363d}
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-  header{padding:48px 24px 24px;text-align:center;border-bottom:1px solid var(--line)}
-  h1{margin:0 0 8px;font-size:clamp(28px,6vw,44px);letter-spacing:-.02em}
-  h1 span{color:var(--x)}
-  .sub{color:var(--dim);margin:0}
-  .stats{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:24px 0 0}
-  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 16px;min-width:120px}
-  .stat b{display:block;font-size:20px}
-  .stat small{color:var(--dim);text-transform:uppercase;letter-spacing:.08em;font-size:11px}
-  main{max-width:1180px;margin:0 auto;padding:28px 20px 64px}
-  /* Cells are a fixed integer multiple of the 64px source (x2 = 128px), so every art
-     pixel lands on exactly 2x2 screen pixels. The old minmax(96px,1fr) stretched the
-     art to 1.5x, which made some pixel blocks 1px wide and others 2px - that uneven
-     grid is what made the sprites look "pecah". */
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,128px);gap:10px;justify-content:center}
-  .cell{background:#fff;border-radius:8px;overflow:hidden;position:relative;width:128px;height:128px}
-  .cell img{width:128px;height:128px;display:block;image-rendering:pixelated}
-  .cell figcaption{position:absolute;left:0;right:0;bottom:0;background:rgba(13,17,23,.82);color:#fff;font-size:10px;padding:2px 4px;font-variant-numeric:tabular-nums}
-  section{margin-top:40px}
-  h2{font-size:19px;border-left:3px solid var(--x);padding-left:10px}
-  table{width:100%;border-collapse:collapse;font-size:13.5px}
-  th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line)}
-  th{color:var(--dim);font-weight:600;text-transform:uppercase;font-size:11px;letter-spacing:.06em}
-  code{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:1px 5px;font-size:12.5px}
-  a{color:var(--x)}
-  footer{color:var(--dim);text-align:center;padding:32px 20px;border-top:1px solid var(--line);font-size:13px}
+/* ------------------------------------------------------------------ tokens */
+:root{
+  --void:#0A0D13; --panel:#12161F; --panel-2:#171C27; --edge:#232A38; --edge-2:#323B4D;
+  --ink:#F4F6FA; --ink-dim:#A8B3C4; --ink-faint:#838D9E;
+  --x:#1D9BF0; --pass:#3DDC97; --wait:#E8B341; --fail:#FF6B6B;
+  --cell:128px;
+  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:48px; --s6:64px;
+  --disp:"Pixelify Sans",ui-monospace,monospace;
+  --sans:"IBM Plex Sans",-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --shadow:6px 6px 0 rgba(0,0,0,.5);
+  --wrap:1224px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--void);color:var(--ink);font:400 16px/1.6 var(--sans);
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:var(--x)}
+h1,h2,h3{font-family:var(--disp);font-weight:600;line-height:1.05;margin:0}
+h1{font-size:clamp(40px,8vw,76px);letter-spacing:-.01em}
+h2{font-size:clamp(26px,4vw,40px)}
+h3{font-size:19px;font-family:var(--sans);font-weight:600;letter-spacing:0}
+p{margin:0}
+:focus-visible{outline:2px solid var(--x);outline-offset:3px}
+.wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding:0 var(--s2)}
+.mono{font-family:var(--mono);font-size:13px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ------------------------------------------------------------------- topbar */
+.top{
+  position:sticky;top:0;z-index:40;background:var(--void);
+  border-bottom:2px solid var(--edge);
+}
+.top-in{display:flex;align-items:center;gap:var(--s3);height:56px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex:0 0 auto;min-height:44px}
+.brand b{font-family:var(--disp);font-weight:600;font-size:20px;letter-spacing:.01em}
+.mk{display:flex;flex:0 0 auto;border:2px solid var(--edge-2)}
+.nav{display:flex;gap:var(--s3);margin-left:auto}
+.nav a{color:var(--ink-dim);text-decoration:none;font-size:14px;font-weight:500;padding:10px 2px}
+.nav a:hover{color:var(--ink)}
+.nav a[aria-current="true"]{color:var(--x)}
+.top-file{color:var(--ink);border:2px solid var(--edge-2);padding:9px 14px;font:500 13px var(--mono);text-decoration:none;white-space:nowrap;min-height:44px;display:inline-flex;align-items:center}
+.top-file:hover{border-color:var(--x);color:var(--x)}
+
+/* --------------------------------------------------------------------- dock */
+.dock{display:none}
+@media (max-width:640px){
+  .nav,.top-file{display:none}
+  .top-in{height:56px}
+  .dock{
+    display:grid;grid-template-columns:repeat(4,1fr);position:fixed;left:0;right:0;bottom:0;z-index:45;
+    background:var(--void);border-top:2px solid var(--edge);
+    padding-bottom:env(safe-area-inset-bottom);
+  }
+  .dock a{
+    display:flex;align-items:center;justify-content:center;min-height:52px;
+    color:var(--ink-dim);text-decoration:none;font-size:13px;font-weight:500;
+    border-right:2px solid var(--edge);
+  }
+  .dock a:last-child{border-right:0}
+  .dock a[aria-current="true"]{color:var(--x);box-shadow:inset 0 3px 0 var(--x)}
+  body{padding-bottom:calc(56px + env(safe-area-inset-bottom));scroll-padding-bottom:80px}
+  body{scroll-padding-top:72px}
+}
+
+/* --------------------------------------------------------------------- hero */
+.hero{padding:var(--s6) 0 var(--s5);border-bottom:2px solid var(--edge)}
+.hero-in{display:grid;gap:var(--s5);grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){
+  .hero-in{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:center;gap:var(--s6)}
+}
+.tag{font:500 13px var(--mono);color:var(--x);margin-bottom:var(--s2)}
+.hero h1{margin-bottom:var(--s2)}
+.lede{font-size:18px;color:var(--ink-dim);max-width:52ch;margin-bottom:var(--s3)}
+.facts{display:flex;flex-wrap:wrap;gap:var(--s3) var(--s4);margin:0 0 var(--s3);padding:0;list-style:none}
+.facts li{font:500 13px var(--mono);color:var(--ink-faint)}
+.facts b{display:block;font:600 22px var(--disp);color:var(--ink)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;
+  font:600 15px var(--sans);background:var(--x);color:#04121E;border:2px solid var(--x);
+  text-decoration:none;cursor:pointer;
+}
+.btn:hover{background:#4CB2FF;border-color:#4CB2FF}
+.btn-quiet{background:transparent;color:var(--ink);border-color:var(--edge-2)}
+.btn-quiet:hover{background:var(--panel-2);border-color:var(--ink);color:var(--ink)}
+.btn:active{transform:translate(2px,2px)}
+
+.rarest{background:var(--panel);border:2px solid var(--edge);box-shadow:var(--shadow);padding:var(--s2)}
+.rarest-head{display:flex;align-items:baseline;justify-content:space-between;gap:var(--s2);margin-bottom:12px}
+.rarest-head h2{font-size:20px}
+.rarest-head span{font:500 12px var(--mono);color:var(--ink-faint)}
+.nine{display:grid;grid-template-columns:repeat(3,var(--nine,64px));gap:8px;justify-content:center}
+@media (min-width:560px){.nine{--nine:128px}}
+.nine button{padding:0;border:0;background:none;cursor:pointer;position:relative}
+.nine img{width:var(--nine,64px);height:var(--nine,64px);image-rendering:pixelated;background:#fff;border:2px solid var(--edge)}
+.nine button:hover img,.nine button:focus-visible img{border-color:var(--x)}
+.nine i{
+  position:absolute;left:0;bottom:0;font:500 11px var(--mono);font-style:normal;
+  background:var(--void);color:var(--x);padding:2px 5px;border-top:2px solid var(--x);border-right:2px solid var(--x);
+}
+
+/* ------------------------------------------------------------------ section */
+section{padding:var(--s6) 0;border-bottom:2px solid var(--edge)}
+.sec-head{margin-bottom:var(--s4);max-width:70ch}
+.sec-head h2{margin-bottom:10px}
+.sec-head p{color:var(--ink-dim)}
+
+/* ----------------------------------------------------------------- explorer */
+.explore-layout{display:grid;gap:var(--s4);grid-template-columns:minmax(0,1fr)}
+@media (min-width:1024px){
+  .explore-layout{grid-template-columns:minmax(0,1fr) 344px;align-items:start}
+}
+
+.tools{
+  display:grid;gap:12px;grid-template-columns:minmax(0,1fr);background:var(--panel);
+  border:2px solid var(--edge);padding:var(--s2);margin-bottom:var(--s2);
+}
+@media (min-width:720px){.tools{grid-template-columns:1.4fr 1fr 1fr 1fr auto;align-items:end}}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label{font:500 12px var(--mono);color:var(--ink-faint)}
+.field input,.field select{
+  min-height:44px;padding:0 12px;background:var(--void);color:var(--ink);
+  border:2px solid var(--edge-2);font:400 15px var(--sans);width:100%;border-radius:0;
+}
+.field input:focus,.field select:focus{border-color:var(--x)}
+.field select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ink-dim) 50%),linear-gradient(135deg,var(--ink-dim) 50%,transparent 50%);background-position:calc(100% - 18px) 20px,calc(100% - 12px) 20px;background-size:6px 6px;background-repeat:no-repeat;padding-right:34px}
+.reset{min-height:44px;padding:0 16px;background:transparent;border:2px solid var(--edge-2);color:var(--ink-dim);font:500 14px var(--sans);cursor:pointer}
+.reset:hover{border-color:var(--fail);color:var(--fail)}
+.toolbar-note{display:flex;flex-wrap:wrap;align-items:center;gap:8px var(--s2);margin-bottom:var(--s2);font:500 13px var(--mono);color:var(--ink-faint)}
+.zoom{display:flex;margin-left:auto;border:2px solid var(--edge-2)}
+.zoom button{min-width:44px;min-height:44px;background:transparent;border:0;border-right:2px solid var(--edge-2);color:var(--ink-dim);font:500 13px var(--mono);cursor:pointer}
+.zoom button:last-child{border-right:0}
+.zoom button[aria-pressed="true"]{background:var(--x);color:#04121E}
+.zoom button:hover{color:var(--ink)}
+.zoom button[aria-pressed="true"]:hover{color:#04121E}
+
+.grid{
+  display:grid;gap:8px;grid-template-columns:repeat(auto-fill,var(--cell));
+  justify-content:start;min-height:120px;
+}
+.cell{position:relative;padding:0;border:0;background:none;cursor:pointer;width:var(--cell)}
+.cell img{
+  width:var(--cell);height:var(--cell);image-rendering:pixelated;background:#fff;
+  border:2px solid var(--edge);
+}
+.cell:hover img{border-color:var(--edge-2)}
+.cell[aria-pressed="true"] img{border-color:var(--x)}
+.cell-foot{
+  display:flex;justify-content:space-between;gap:4px;font:500 11px var(--mono);
+  color:var(--ink-faint);padding-top:4px;
+}
+.cell-foot .rk{color:var(--ink-faint)}
+.cell.top .cell-foot .rk{color:var(--wait)}
+.more{margin-top:var(--s3)}
+.state{border:2px dashed var(--edge-2);padding:var(--s4);text-align:center;color:var(--ink-dim)}
+.state b{display:block;color:var(--ink);margin-bottom:6px;font-weight:600}
+.state .btn{margin-top:var(--s2)}
+
+.rail{background:var(--panel);border:2px solid var(--edge);padding:var(--s2)}
+@media (min-width:1024px){.rail{position:sticky;top:88px}}
+.rail-empty{color:var(--ink-faint);font-size:14px}
+.rail-img{image-rendering:pixelated;background:#fff;border:2px solid var(--edge);width:256px;max-width:100%;margin:0 auto}
+.rail h3{font-family:var(--disp);font-size:26px;margin:var(--s2) 0 6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:var(--s2)}
+.chip{font:500 12px var(--mono);padding:4px 9px;border:2px solid var(--edge-2);color:var(--ink-dim)}
+.chip.t-Mythic{color:var(--fail);border-color:var(--fail)}
+.chip.t-Legendary{color:var(--wait);border-color:var(--wait)}
+.chip.t-Epic{color:#C08BFF;border-color:#C08BFF}
+.chip.t-Rare{color:var(--x);border-color:var(--x)}
+.rail dl{margin:0;border-top:2px solid var(--edge)}
+.rail .row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:9px 0;border-bottom:2px solid var(--edge)}
+.rail .row dt{font:500 12px var(--mono);color:var(--ink-faint)}
+.rail .row dt b{display:block;font:500 14px var(--sans);color:var(--ink)}
+.rail .row dd{margin:0;text-align:right;font:500 12px var(--mono);color:var(--ink-dim)}
+.rail .row dd em{display:block;font-style:normal;color:var(--ink-faint);font-size:11px}
+.rail-links{display:flex;flex-direction:column;gap:8px;margin-top:var(--s2)}
+.copy{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:44px;
+  padding:0 12px;background:var(--void);border:2px solid var(--edge-2);color:var(--ink-dim);
+  font:400 12px var(--mono);cursor:pointer;text-align:left;width:100%;min-width:0;
+}
+.copy:hover{border-color:var(--x);color:var(--x)}
+.copy span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.copy b{color:var(--x);font-weight:500;flex:0 0 auto}
+.rail-open{min-height:44px;display:flex;align-items:center;font:500 13px var(--mono);text-decoration:none;color:var(--x);border:2px solid var(--x);padding:0 12px;min-width:0}
+.rail-open:hover{background:var(--x);color:#04121E}
+
+/* ------------------------------------------------------------------- rarity */
+.tier-list{list-style:none;margin:0 0 var(--s4);padding:0;display:grid;gap:10px}
+.tier{
+  display:grid;grid-template-columns:96px 1fr auto;align-items:center;gap:12px;
+  padding:12px var(--s2);background:var(--panel);border:2px solid var(--edge);border-left-width:6px;
+}
+.tier.c-Mythic{border-left-color:var(--fail)} .tier.c-Legendary{border-left-color:var(--wait)}
+.tier.c-Epic{border-left-color:#C08BFF} .tier.c-Rare{border-left-color:var(--x)}
+.tier.c-Common{border-left-color:var(--ink-faint)}
+.tier h3{font-family:var(--sans);font-size:15px}
+.tier .bar{height:14px;background:var(--void);border:2px solid var(--edge-2);position:relative}
+.tier .bar i{display:block;height:100%;background:var(--ink-faint)}
+.tier.c-Mythic .bar i{background:var(--fail)} .tier.c-Legendary .bar i{background:var(--wait)}
+.tier.c-Epic .bar i{background:#C08BFF} .tier.c-Rare .bar i{background:var(--x)}
+.tier .num{text-align:right;font:500 13px var(--mono);color:var(--ink-dim)}
+.tier .num b{display:block;color:var(--ink);font-size:17px}
+@media (max-width:640px){.tier{grid-template-columns:1fr auto;gap:8px}.tier .bar{grid-column:1/-1}}
+
+.trait-grid{display:grid;gap:var(--s2);grid-template-columns:repeat(auto-fit,minmax(272px,1fr));margin-bottom:var(--s4)}
+.trait-card{background:var(--panel);border:2px solid var(--edge);padding:var(--s2);min-width:0}
+.trait-card h3{display:flex;justify-content:space-between;gap:10px;align-items:baseline;margin-bottom:12px;font-size:15px}
+.trait-card h3 span{font:400 12px var(--mono);color:var(--ink-faint)}
+.tf{list-style:none;margin:0;padding:0;max-height:322px;overflow-y:auto}
+.tf li{display:grid;grid-template-columns:1fr 62px;gap:8px;align-items:center;padding:5px 0;border-bottom:2px solid var(--edge)}
+.tf li:last-child{border-bottom:0}
+.tf .nm{display:flex;align-items:center;gap:8px;font-size:13px;min-width:0}
+.tf .nm b{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tf .sw{width:12px;height:12px;flex:0 0 auto;border:2px solid var(--edge-2)}
+.tf .pc{text-align:right;font:500 12px var(--mono);color:var(--ink-dim)}
+.tf .pc em{display:block;font-style:normal;color:var(--ink-faint);font-size:11px}
+.rare-table{width:100%;border-collapse:collapse;background:var(--panel);border:2px solid var(--edge)}
+.rare-table caption{text-align:left;padding:var(--s2);font:600 15px var(--sans);color:var(--ink);border-bottom:2px solid var(--edge)}
+.rare-table th,.rare-table td{padding:10px var(--s2);text-align:left;border-bottom:2px solid var(--edge);font-size:14px}
+.rare-table th{font:500 12px var(--mono);color:var(--ink-faint)}
+.rare-table tr:last-child td{border-bottom:0}
+.rare-table td.n{font-family:var(--mono);font-size:13px}
+.rare-table img{width:64px;height:64px;image-rendering:pixelated;background:#fff;border:2px solid var(--edge)}
+.rare-table tbody tr:hover{background:var(--panel-2)}
+.wide-only{display:none}
+@media (min-width:701px){.wide-only{display:table}.narrow-only{display:none}}
+@media (max-width:700px){.narrow-only{display:block}ul.narrow-only{display:grid}}
+.rc-list{list-style:none;margin:0;padding:0;gap:10px}
+.rc{display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px;background:var(--panel);border:2px solid var(--edge);padding:12px}
+.rc img{width:64px;height:64px;image-rendering:pixelated;background:#fff;border:2px solid var(--edge)}
+.rc-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.rc-top b{font:600 16px var(--mono)}
+.rc-meta{font:500 12px var(--mono);color:var(--ink-faint);margin-bottom:8px}
+.rc-traits{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.rc-traits li{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:var(--ink-dim);border-bottom:2px solid var(--edge);padding-bottom:4px}
+.rc-traits li:last-child{border-bottom:0;padding-bottom:0}
+.rc-traits b{color:var(--ink);font-weight:500;text-align:right}
+
+/* -------------------------------------------------------------------- files */
+.files{list-style:none;margin:0;padding:0;border-top:2px solid var(--edge)}
+.files li{display:grid;gap:8px;grid-template-columns:minmax(0,1fr) auto;align-items:center;padding:var(--s2) 0;border-bottom:2px solid var(--edge)}
+@media (max-width:640px){.files li{grid-template-columns:minmax(0,1fr)}}
+.files code{font:500 13px var(--mono);color:var(--x);display:block;margin-bottom:4px;word-break:break-all}
+.files p{color:var(--ink-dim);font-size:14px}
+.files .acts{display:flex;gap:8px;flex-wrap:wrap;min-width:0}
+.files .copy,.files .rail-open{width:auto}
+@media (max-width:640px){.files .acts .copy,.files .rail-open{flex:1 1 auto}}
+
+/* ------------------------------------------------------------------- footer */
+footer{padding:var(--s5) 0;color:var(--ink-faint);font-size:14px}
+.foot{display:grid;gap:var(--s3);grid-template-columns:1fr}
+@media (min-width:720px){.foot{grid-template-columns:2fr 1fr 1fr}}
+footer h3{font-family:var(--sans);font-size:13px;font-weight:600;color:var(--ink);margin-bottom:10px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer a{color:var(--ink-dim);text-decoration:none;font-size:14px}
+footer a:hover{color:var(--x)}
+footer .colophon{margin-top:var(--s4);padding-top:var(--s2);border-top:2px solid var(--edge);font:400 12px var(--mono)}
+
+/* ------------------------------------------------------------------- reveal */
+.rv{opacity:0;transform:translateY(12px)}
+.rv.in{opacity:1;transform:none;transition:opacity .5s ease,transform .5s ease}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv,.rv.in{opacity:1;transform:none;transition:none}
+}
 </style>
 </head>
-<body>
-<header>
-  <h1>X <span>Suit</span> Club</h1>
-  <p class="sub">1111 hand-authored 64&times;64 pixel-art suit characters whose eyes are the X (Twitter) logo glyph.</p>
-  <div class="stats">
-    <div class="stat"><b>1111</b><small>Supply</small></div>
-    <div class="stat"><b>6</b><small>Hair styles</small></div>
-    <div class="stat"><b>6</b><small>Trait types</small></div>
-    <div class="stat"><b>1111</b><small>Unique combos</small></div>
+<body id="top">
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="#top">
+      <svg class="mk" viewBox="0 0 4 4" width="32" height="32" role="img" aria-label="X Suit Club"><rect width="4" height="4" fill="#0A0D13"/><rect x="0" y="0" width="1" height="1" fill="#1D9BF0"/><rect x="3" y="0" width="1" height="1" fill="#1D9BF0"/><rect x="1" y="1" width="1" height="1" fill="#1D9BF0"/><rect x="2" y="1" width="1" height="1" fill="#1D9BF0"/><rect x="1" y="2" width="1" height="1" fill="#1D9BF0"/><rect x="2" y="2" width="1" height="1" fill="#1D9BF0"/><rect x="0" y="3" width="1" height="1" fill="#1D9BF0"/><rect x="3" y="3" width="1" height="1" fill="#1D9BF0"/></svg>
+      <b>X Suit Club</b></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#explore">Explore</a>
+      <a href="#rarity">Rarity</a>
+      <a href="#files">Files</a>
+    </nav>
+    <a class="top-file" href="rarity.csv">rarity.csv</a>
   </div>
 </header>
+
+<nav class="dock" aria-label="Sections">
+  <a href="#explore">Explore</a>
+  <a href="#rarity">Rarity</a>
+  <a href="#files">Files</a>
+  <a href="#top">Top</a>
+</nav>
+
 <main>
-  <p class="sub">Images render at native 64&times;64 with <code>image-rendering: pixelated</code>. Metadata is ERC-721 / OpenSea compatible.</p>
-  <section>
-    <h2>Gallery</h2>
-    <div class="grid" id="grid"></div>
-  </section>
-  <section>
-    <h2>Endpoints</h2>
-    <table>
-      <tr><th>Asset</th><th>URL</th></tr>
-      <tr><td>Image</td><td><code>png/0001.png</code> … <code>png/1111.png</code></td></tr>
-      <tr><td>Metadata</td><td><code>metadata/0001.json</code> … <code>metadata/1111.json</code></td></tr>
-      <tr><td>Rarity table</td><td><a href="rarity.csv">rarity.csv</a></td></tr>
-      <tr><td>Rarity detail</td><td><a href="rarity.json">rarity.json</a></td></tr>
-      <tr><td>Report</td><td><a href="rarity_summary.md">rarity_summary.md</a></td></tr>
-      <tr><td>Collection</td><td><a href="collection.json">collection.json</a></td></tr>
+<!-- ===================================================================== hero -->
+<div class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <p class="tag">1111 tokens on Robinhood Chain testnet</p>
+      <h1>X Suit Club</h1>
+      <p class="lede">Every portrait is drawn pixel by pixel on a 64x64 grid. A suit, a collar, a tie, and the X glyph where the eyes should be. No filter and no upscale: each image is the grid itself.</p>
+      <ul class="facts">
+        <li><b>1111</b>supply</li>
+        <li><b>93</b>trait values</li>
+        <li><b>6</b>hair styles</li>
+        <li><b>64x64</b>source pixels</li>
+      </ul>
+      <div class="cta">
+        <a class="btn" href="#explore">Open the explorer</a>
+        <a class="btn btn-quiet" href="#rarity">See the rarity report</a>
+      </div>
+    </div>
+    <div class="rarest rv">
+      <div class="rarest-head">
+        <h2>Rarest nine</h2>
+        <span>rank 1 to 9 of 1111</span>
+      </div>
+      <div class="nine" id="nine"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================================================================== explore -->
+<section id="explore">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Explorer</h2>
+      <p>Search any of the 1111 tokens, filter by the traits you care about, and open a portrait to see exactly how rare each of its parts is. Counts and percentages come from the published rarity report.</p>
+    </div>
+
+    <div class="explore-layout">
+      <div>
+        <div class="tools">
+          <div class="field">
+            <label for="q">Token number</label>
+            <input id="q" type="search" inputmode="numeric" placeholder="47" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="sort">Order</label>
+            <select id="sort">
+              <option value="rank">Rarest first</option>
+              <option value="rank-desc">Commonest first</option>
+              <option value="id">Token number</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="tier">Tier</label>
+            <select id="tier"><option value="">All tiers</option></select>
+          </div>
+          <div class="field">
+            <label for="hs">Hair style</label>
+            <select id="hs"><option value="">All styles</option></select>
+          </div>
+          <button class="reset" id="reset" type="button">Reset</button>
+        </div>
+
+        <div class="toolbar-note">
+          <span id="count">Loading the index…</span>
+          <div class="zoom" role="group" aria-label="Tile size">
+            <button type="button" data-z="64" aria-pressed="false">1x</button>
+            <button type="button" data-z="128" aria-pressed="true">2x</button>
+            <button type="button" data-z="192" aria-pressed="false">3x</button>
+          </div>
+        </div>
+
+        <div id="gridOut" aria-live="polite">
+          <div class="state"><b>Loading the index</b>Reading tokens.json from this site.</div>
+        </div>
+      </div>
+
+      <aside class="rail" id="rail" aria-label="Token detail">
+        <p class="rail-empty">Pick any portrait and its traits, rank and file paths appear here.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- =================================================================== rarity -->
+<section id="rarity">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Rarity</h2>
+      <p>The score follows the rarity.tools formula: for each of the six trait categories, 1111 is divided by how many tokens carry that value, and the six results are added. Tiers are cut by rank percentile, so the rarest 1 percent is Mythic.</p>
+    </div>
+
+    <ul class="tier-list" id="tiers"></ul>
+    <div class="trait-grid" id="freq"></div>
+
+    <table class="rare-table wide-only">
+      <caption>Rarest fifteen tokens</caption>
+      <thead>
+        <tr><th>Rank</th><th>Token</th><th>Art</th><th>Tier</th><th>Score</th><th>Hair style</th><th>Hair</th><th>Eyes</th><th>Suit</th></tr>
+      </thead>
+      <tbody id="top15"></tbody>
     </table>
-  </section>
+    <h3 class="narrow-only" style="font:600 15px var(--sans);margin-bottom:14px">Rarest fifteen tokens</h3>
+    <ul class="rc-list narrow-only" id="top15c"></ul>
+  </div>
+</section>
+
+<!-- ==================================================================== files -->
+<section id="files">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Files</h2>
+      <p>This page reads plain files served next to it. Nothing sits behind an API you cannot call yourself.</p>
+    </div>
+    <ul class="files" id="fileList"></ul>
+  </div>
+</section>
 </main>
-<footer>X Suit Club · ERC-721 on Robinhood Chain testnet (46630) · art drawn pixel by pixel, never upscaled</footer>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <h3>X Suit Club</h3>
+      <p>1111 hand-authored pixel suits with X-logo eyes, minted on Robinhood Chain testnet. Art, metadata and rarity files are public in this repository.</p>
+    </div>
+    <div>
+      <h3>On chain</h3>
+      <ul>
+        <li><a href="https://gooblinstown.xyz/xsuit/">Mint monitor</a></li>
+        <li><a href="rarity.csv">rarity.csv</a></li>
+        <li><a href="collection.json">collection.json</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Source</h3>
+      <ul>
+        <li><a href="https://github.com/Daimon-Minor/xsuitclub">Repository</a></li>
+        <li><a href="metadata/0001.json">metadata/0001.json</a></li>
+        <li><a href="png/collection.png">Banner sheet</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap colophon">NFT contract 0xd490da0f80d5087c1f82d016ac3a6f10561ccd5a on chain 46630</div>
+</footer>
+
 <script>
-  const grid = document.getElementById('grid');
-  const frag = document.createDocumentFragment();
-  for (let i = 1; i <= 1111; i++) {
-    const id = String(i).padStart(4, '0');
-    const fig = document.createElement('figure');
-    fig.className = 'cell';
-    const img = document.createElement('img');
-    img.loading = 'lazy'; img.width = 64; img.height = 64;
-    img.src = `png/${id}.png`; img.alt = `X Suit Club #${id}`;
-    const cap = document.createElement('figcaption');
-    cap.textContent = `#${id}`;
-    fig.append(img, cap); frag.append(fig);
+(function(){
+'use strict';
+var $ = function(s){ return document.querySelector(s); };
+
+/* ------------------------------------------------------------- reveal on scroll */
+var revealables = document.querySelectorAll('.rv');
+if ('IntersectionObserver' in window){
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  revealables.forEach(function(el){ io.observe(el); });
+} else {
+  revealables.forEach(function(el){ el.classList.add('in'); });
+}
+
+/* --------------------------------------------------------------- dock scroll-spy */
+var dockLinks = Array.prototype.slice.call(document.querySelectorAll('.dock a, .nav a'));
+var spyTargets = ['explore','rarity','files'];
+if ('IntersectionObserver' in window){
+  var spy = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (!e.isIntersecting) return;
+      var id = e.target.id;
+      dockLinks.forEach(function(a){ a.setAttribute('aria-current', a.getAttribute('href') === '#' + id ? 'true' : 'false'); });
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  spyTargets.forEach(function(id){ var el = document.getElementById(id); if (el) spy.observe(el); });
+}
+
+/* ------------------------------------------------------------------- index data */
+var DOC = null, TOKENS = [], VIEW = [], SHOWN = 0, PAGE = 120;
+var SWATCH = {
+  'Black':'#101216','Espresso':'#3A2A22','Deep Brown':'#4A3226','Brown':'#6B4A32','Chestnut':'#8A5A34',
+  'Auburn':'#9E4527','Red':'#C2382B','Orange':'#E0762A','Tangerine':'#F08A3C','Amber':'#FFB45A',
+  'Blond':'#E8CE74','Sandy':'#D8B57C','Butter':'#F2E3A0','Ivory':'#F6F1E2','White':'#FFFFFF',
+  'Silver':'#C7CDD6','Silver Grey':'#9AA3B0','Slate Grey':'#5E6878','Charcoal':'#2E333D','Sky Blue':'#5FC6F5',
+  'Cyan':'#4FD8E0','Aqua':'#57E2C8','Teal':'#2E8F86','Pine Green':'#2C6B4F','Lime':'#A6E04A',
+  'Olive':'#6E7A3A','Yellow':'#F2D64A','Gold':'#E0A93B','Sage':'#9DBE9A','Magenta':'#C8389A',
+  'Bubblegum':'#F58BC0','Violet':'#8A5BD6','Lavender':'#B9A6E8','Royal Blue':'#2B4FD8','Midnight Navy':'#1B2440',
+  'Navy':'#1F2C4E','Navy Blue':'#22315A','Cream':'#F4EBD8','Peach':'#F7C9A6','Blush':'#F2B8AE',
+  'Porcelain':'#F4DCC8','Fair':'#F0CDA8','Light':'#E0B487','Medium':'#C08A56','Tan':'#B27A45',
+  'Periwinkle':'#92A8E8','X Black':'#0C0F14','Pure White':'#FFFFFF'
+};
+function swatch(name){ return SWATCH[name] || 'var(--edge-2)'; }
+
+fetch('tokens.json', { cache: 'no-cache' })
+  .then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  .then(function(d){ DOC = d; TOKENS = d.tokens; buildStatic(); apply(); })
+  .catch(function(err){
+    $('#gridOut').innerHTML = '<div class="state"><b>The index did not load</b>tokens.json returned ' +
+      String(err.message).replace(/[<>&]/g, '') + '. Reload the page, or open rarity.csv for the same data.</div>' +
+      '<div class="state" style="margin-top:16px"><a class="btn" href="rarity.csv">Open rarity.csv</a></div>';
+    $('#count').textContent = 'Index unavailable';
+  });
+
+/* --------------------------------------------------- static blocks from the index */
+function buildStatic(){
+  var nine = $('#nine');
+  var top9 = TOKENS.slice().sort(function(a,b){ return a.r - b.r; }).slice(0,9);
+  nine.innerHTML = top9.map(function(t){
+    return '<button type="button" data-i="' + t.i + '" aria-label="Token ' + pad(t.i) + ', rank ' + t.r + ', ' + t.t + '">' +
+      '<img src="png/' + pad(t.i) + '.png" alt="X Suit Club token ' + pad(t.i) + '" width="128" height="128">' +
+      '<i>#' + pad(t.i) + '</i></button>';
+  }).join('');
+  nine.addEventListener('click', function(e){
+    var b = e.target.closest('button[data-i]'); if (!b) return;
+    var i = Number(b.dataset.i);
+    $('#q').value = pad(i); $('#sort').value = 'id'; $('#tier').value = '';
+    $('#hs').value = ''; apply(); pick(i, true);
+  });
+
+  var tierSel = $('#tier'), hsSel = $('#hs');
+  DOC.tiers.forEach(function(t){
+    tierSel.insertAdjacentHTML('beforeend', '<option value="' + t[0] + '">' + t[0] + ' (' + t[1] + ')</option>');
+  });
+  Object.keys(DOC.freq['Hair Style']).sort().forEach(function(v){
+    hsSel.insertAdjacentHTML('beforeend', '<option value="' + esc(v) + '">' + esc(v) + '</option>');
+  });
+
+  $('#tiers').innerHTML = DOC.tiers.map(function(t){
+    var name = t[0], n = t[1], lo = t[2], hi = t[3];
+    var share = n / DOC.n * 100;
+    return '<li class="tier c-' + name + '">' +
+      '<h3>' + name + '</h3>' +
+      '<div class="bar"><i style="width:' + share.toFixed(2) + '%"></i></div>' +
+      '<div class="num"><b>' + n + '</b>' + share.toFixed(2) + '% &middot; rank ' + lo + '-' + hi + '</div>' +
+    '</li>';
+  }).join('');
+
+  $('#freq').innerHTML = DOC.tk.map(function(cat){
+    var vals = Object.keys(DOC.freq[cat]).sort(function(a,b){ return DOC.freq[cat][a][0] - DOC.freq[cat][b][0]; });
+    var rows = vals.map(function(v){
+      var f = DOC.freq[cat][v];
+      return '<li><span class="nm"><i class="sw" style="background:' + swatch(v) + '"></i><b>' + esc(v) + '</b></span>' +
+        '<span class="pc">' + f[1].toFixed(2) + '%<em>' + f[0] + 'x</em></span></li>';
+    }).join('');
+    return '<div class="trait-card"><h3>' + cat + '<span>' + vals.length + ' values</span></h3><ul class="tf">' + rows + '</ul></div>';
+  }).join('');
+
+  var rarest15 = TOKENS.slice().sort(function(a,b){ return a.r - b.r; }).slice(0,15);
+  $('#top15').innerHTML = rarest15.map(function(t){
+    return '<tr><td class="n">#' + t.r + '</td><td class="n">' + pad(t.i) + '</td>' +
+      '<td><img src="png/' + pad(t.i) + '.png" alt="Token ' + pad(t.i) + '" width="64" height="64"></td>' +
+      '<td>' + t.t + '</td><td class="n">' + t.s.toFixed(2) + '</td>' +
+      '<td>' + esc(t.a[0]) + '</td><td>' + esc(t.a[1]) + '</td><td>' + esc(t.a[2]) + '</td><td>' + esc(t.a[3]) + '</td></tr>';
+  }).join('');
+  $('#top15c').innerHTML = rarest15.map(function(t){
+    return '<li class="rc"><img src="png/' + pad(t.i) + '.png" alt="Token ' + pad(t.i) + '" width="64" height="64"><div>' +
+      '<div class="rc-top"><b>#' + pad(t.i) + '</b><span class="chip t-' + t.t + '">' + t.t + '</span></div>' +
+      '<p class="rc-meta">rank ' + t.r + ' of ' + DOC.n + ' &middot; score ' + t.s.toFixed(2) + '</p>' +
+      '<ul class="rc-traits">' + DOC.tk.map(function(cat, n){
+        return '<li><span>' + cat + '</span><b>' + esc(t.a[n]) + '</b></li>';
+      }).join('') + '</ul></div></li>';
+  }).join('');
+
+  var files = [
+    ['tokens.json', 'The index behind this page: all 1111 tokens with rank, tier, score and their six trait values. ' + (JSON.stringify(DOC).length / 1024).toFixed(0) + ' KB.'],
+    ['metadata/NNNN.json', 'OpenSea-compatible ERC-721 metadata for one token, with trait frequencies and percentages.'],
+    ['png/NNNN.png', 'The 64x64 sprite as a transparent PNG. Open it at 1x for the exact grid.'],
+    ['rarity.csv', 'The published rarity table: rank, index, tier, score, the six traits and the render seed for every token.'],
+    ['rarity.json', 'The same report as JSON, plus the trait frequency tables in machine-readable form.'],
+    ['collection.json', 'Collection-level metadata: name, supply, trait type counts and the collection image.'],
+    ['png/collection.png', 'A 768x768 banner holding the rarest 144 tokens in rank order.']
+  ];
+  $('#fileList').innerHTML = files.map(function(f){
+    var path = f[0], sample = path.indexOf('NNNN') > -1 ? path.replace('NNNN', '0047') : path;
+    var copyPath = 'https://daimon-minor.github.io/xsuitclub/' + path;
+    var hasSample = path.indexOf('NNNN') > -1 || /\.(csv|png)$/.test(path);
+    return '<li><div><code>' + esc(path) + '</code><p>' + esc(f[1]) + '</p></div>' +
+      '<div class="acts">' +
+        (hasSample ? '<a class="rail-open" href="' + sample + '">Open sample</a>' : '') +
+        '<button class="copy" type="button" data-copy="' + esc(copyPath) + '" aria-label="Copy the URL for ' + esc(path) + '"><span>' + esc(path) + '</span><b>Copy</b></button>' +
+      '</div></li>';
+  }).join('');
+}
+
+/* ------------------------------------------------------------------- filtering */
+function apply(){
+  var q = $('#q').value.trim();
+  var tier = $('#tier').value, hs = $('#hs').value, sort = $('#sort').value;
+  var qn = /^\d{1,5}$/.test(q) ? Number(q) : null;
+  VIEW = TOKENS.filter(function(t){
+    if (tier && t.t !== tier) return false;
+    if (hs && t.a[0] !== hs) return false;
+    if (q && qn === null) return false;
+    if (qn !== null && t.i !== qn) return false;
+    return true;
+  });
+  if (sort === 'rank') VIEW.sort(function(a,b){ return a.r - b.r; });
+  else if (sort === 'rank-desc') VIEW.sort(function(a,b){ return b.r - a.r; });
+  else VIEW.sort(function(a,b){ return a.i - b.i; });
+
+  $('#count').textContent = VIEW.length === TOKENS.length
+    ? 'Showing all ' + DOC.n + ' tokens'
+    : VIEW.length + ' of ' + DOC.n + ' tokens match';
+  SHOWN = 0;
+  render(true);
+}
+
+function render(reset){
+  var out = $('#gridOut');
+  if (reset) out.innerHTML = '';
+  var slice = VIEW.slice(reset ? 0 : SHOWN, (reset ? 0 : SHOWN) + PAGE);
+  if (VIEW.length === 0){
+    out.innerHTML = '<div class="state"><b>No token matches those filters</b>Clear one filter to widen the search.</div>';
+    return;
   }
-  grid.append(frag);
+  if (reset && !out.querySelector('.grid')){
+    out.innerHTML = '<div class="grid" id="grid"></div><div class="more" id="moreWrap"></div>';
+  }
+  var grid = out.querySelector('#grid');
+  grid.insertAdjacentHTML('beforeend', slice.map(function(t){
+    return '<button class="cell' + (t.r <= 55 ? ' top' : '') + '" type="button" data-i="' + t.i + '" aria-pressed="false" ' +
+      'aria-label="Token ' + pad(t.i) + ', rank ' + t.r + ' of ' + DOC.n + ', ' + t.t + '">' +
+      '<img src="png/' + pad(t.i) + '.png" alt="X Suit Club token ' + pad(t.i) + '" width="128" height="128" loading="lazy" decoding="async">' +
+      '<span class="cell-foot"><span>#' + pad(t.i) + '</span><span class="rk">R' + t.r + '</span></span></button>';
+  }).join(''));
+  SHOWN = Math.min(VIEW.length, (reset ? 0 : SHOWN) + PAGE);
+  var more = out.querySelector('#moreWrap');
+  more.innerHTML = SHOWN < VIEW.length
+    ? '<button class="btn btn-quiet" id="more" type="button">Show ' + Math.min(PAGE, VIEW.length - SHOWN) + ' more (' + SHOWN + ' of ' + VIEW.length + ')</button>'
+    : '<p class="mono" style="color:var(--ink-faint)">End of the list. ' + VIEW.length + ' token' + (VIEW.length === 1 ? '' : 's') + ' shown.</p>';
+}
+
+function pick(i, scroll){
+  var t = TOKENS.filter(function(x){ return x.i === i; })[0];
+  if (!t) return;
+  Array.prototype.forEach.call(document.querySelectorAll('.cell'), function(c){
+    c.setAttribute('aria-pressed', Number(c.dataset.i) === i ? 'true' : 'false');
+  });
+  var rel = 'https://daimon-minor.github.io/xsuitclub/';
+  $('#rail').innerHTML =
+    '<img class="rail-img" src="png/' + pad(i) + '.png" alt="Token ' + pad(i) + ' at four times scale" width="256" height="256">' +
+    '<h3>X Suit Club #' + pad(i) + '</h3>' +
+    '<div class="chips">' +
+      '<span class="chip t-' + t.t + '">' + t.t + '</span>' +
+      '<span class="chip">rank ' + t.r + ' / ' + DOC.n + '</span>' +
+      '<span class="chip">score ' + t.s.toFixed(2) + '</span>' +
+    '</div>' +
+    '<dl>' + DOC.tk.map(function(cat, n){
+      var v = t.a[n], f = DOC.freq[cat][v] || [0, 0];
+      var rare = f[1] <= 5;
+      return '<div class="row"><dt>' + cat + '<b>' + esc(v) + '</b></dt>' +
+        '<dd style="' + (rare ? 'color:var(--wait)' : '') + '">' + f[1].toFixed(2) + '%<em>' + f[0] + ' of ' + DOC.n + '</em></dd></div>';
+    }).join('') + '</dl>' +
+    '<div class="rail-links">' +
+      '<a class="rail-open" href="metadata/' + pad(i) + '.json">Open metadata/' + pad(i) + '.json</a>' +
+      '<a class="rail-open" href="png/' + pad(i) + '.png">Open the 64x64 PNG</a>' +
+      '<button class="copy" type="button" data-copy="' + rel + 'metadata/' + pad(i) + '.json" aria-label="Copy the metadata URL"><span>' + rel + 'metadata/' + pad(i) + '.json</span><b>Copy</b></button>' +
+    '</div>';
+  if (scroll){
+    var rail = $('#rail');
+    if (window.matchMedia('(max-width:1023px)').matches) rail.scrollIntoView({ block: 'start' });
+    else document.getElementById('explore').scrollIntoView({ block: 'start' });
+  }
+}
+
+/* -------------------------------------------------------------------- controls */
+$('#q').addEventListener('input', apply);
+$('#sort').addEventListener('change', apply);
+$('#tier').addEventListener('change', apply);
+$('#hs').addEventListener('change', apply);
+$('#reset').addEventListener('click', function(){
+  $('#q').value = ''; $('#sort').value = 'rank'; $('#tier').value = ''; $('#hs').value = ''; apply();
+});
+$('#gridOut').addEventListener('click', function(e){
+  var c = e.target.closest('.cell');
+  if (c){ pick(Number(c.dataset.i), false); return; }
+  if (e.target.id === 'more'){ render(false); }
+});
+document.addEventListener('click', function(e){
+  var b = e.target.closest('.copy');
+  if (!b) return;
+  var text = b.dataset.copy;
+  var done = function(){
+    var label = b.querySelector('b'); label.textContent = 'Copied';
+    setTimeout(function(){ label.textContent = 'Copy'; }, 1400);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done, function(){ window.prompt('Copy the URL', text); });
+  } else { window.prompt('Copy the URL', text); }
+});
+document.querySelector('.zoom').addEventListener('click', function(e){
+  var b = e.target.closest('button[data-z]'); if (!b) return;
+  document.documentElement.style.setProperty('--cell', b.dataset.z + 'px');
+  Array.prototype.forEach.call(this.querySelectorAll('button'), function(x){
+    x.setAttribute('aria-pressed', x === b ? 'true' : 'false');
+  });
+});
+
+function pad(n){ return String(n).padStart(4, '0'); }
+function esc(s){ return String(s).replace(/[&<>"']/g, function(c){
+  return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]; }); }
+})();
 </script>
 </body>
 </html>
