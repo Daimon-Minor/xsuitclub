@@ -1,0 +1,69 @@
+{
+  "name": "X Suit Club #0995",
+  "description": "A 64x64 pixel-art collector: a man in a suit whose eyes are the X (Twitter) logo glyph. Hand-authored grid (never an upscaled AI image), 6 hair designs, randomised X-eye colour, suit, shirt and skin tones. Flat single-colour symmetrical jacket, one uniform slim neck, no pocket square.",
+  "image": "https://daimon-minor.github.io/xsuitclub/png/0995.png",
+  "external_url": "https://x.com/",
+  "attributes": [
+    {
+      "trait_type": "Hair Style",
+      "value": "Spiky",
+      "frequency": 175,
+      "percent": 15.752
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Blond",
+      "frequency": 47,
+      "percent": 4.23,
+      "hex": "#C49252"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Lemon",
+      "frequency": 36,
+      "percent": 3.24,
+      "hex": "#F0F078"
+    },
+    {
+      "trait_type": "Suit",
+      "value": "Navy",
+      "frequency": 63,
+      "percent": 5.671,
+      "hex": "#1A3C6E"
+    },
+    {
+      "trait_type": "Shirt",
+      "value": "Sky",
+      "frequency": 79,
+      "percent": 7.111,
+      "hex": "#C6D6E8"
+    },
+    {
+      "trait_type": "Skin",
+      "value": "Olive",
+      "frequency": 134,
+      "percent": 12.061,
+      "hex": "#BA845A"
+    },
+    {
+      "trait_type": "Rarity Tier",
+      "value": "Epic"
+    }
+  ],
+  "rarity": {
+    "score": 100.8372,
+    "rank": 141,
+    "percentile": 12.691,
+    "tier": "Epic",
+    "per_trait_score": {
+      "Hair Style": 6.3486,
+      "Hair": 23.6383,
+      "Eyes": 30.8611,
+      "Suit": 17.6349,
+      "Shirt": 14.0633,
+      "Skin": 8.291
+    }
+  },
+  "seed": 28140330,
+  "compiler": "pixel-art/gen:64x64 grid v3"
+}

@@ -1,0 +1,592 @@
+{
+  "collection": "X Suit Club",
+  "total_supply": 1111,
+  "unique_trait_combinations": 1111,
+  "scoring": "rarity.tools score = sum(totalSupply / traitCount) across 6 traits",
+  "tier_rules_percentile": {
+    "Mythic": "top 1.0%",
+    "Legendary": "top 5.0%",
+    "Epic": "top 15.0%",
+    "Rare": "top 40.0%",
+    "Common": "top 100.0%"
+  },
+  "tier_distribution": {
+    "Mythic": 11,
+    "Legendary": 44,
+    "Epic": 111,
+    "Rare": 278,
+    "Common": 667
+  },
+  "trait_frequencies": {
+    "Hair Style": {
+      "spiky": {
+        "name": "Spiky",
+        "hex": null,
+        "count": 175,
+        "percent": 15.752
+      },
+      "side_part": {
+        "name": "Side Part",
+        "hex": null,
+        "count": 179,
+        "percent": 16.112
+      },
+      "buzz": {
+        "name": "Buzz Cut",
+        "hex": null,
+        "count": 182,
+        "percent": 16.382
+      },
+      "fringe": {
+        "name": "Fringe / Bangs",
+        "hex": null,
+        "count": 182,
+        "percent": 16.382
+      },
+      "long": {
+        "name": "Long",
+        "hex": null,
+        "count": 194,
+        "percent": 17.462
+      },
+      "classic": {
+        "name": "Classic Cut",
+        "hex": null,
+        "count": 199,
+        "percent": 17.912
+      }
+    },
+    "Hair": {
+      "#96969C": {
+        "name": "Silver",
+        "hex": "#96969C",
+        "count": 34,
+        "percent": 3.06
+      },
+      "#5C3A1E": {
+        "name": "Brown",
+        "hex": "#5C3A1E",
+        "count": 35,
+        "percent": 3.15
+      },
+      "#E8D2A8": {
+        "name": "Pale Blond",
+        "hex": "#E8D2A8",
+        "count": 35,
+        "percent": 3.15
+      },
+      "#121014": {
+        "name": "Jet Black",
+        "hex": "#121014",
+        "count": 37,
+        "percent": 3.33
+      },
+      "#241A12": {
+        "name": "Dark Brown",
+        "hex": "#241A12",
+        "count": 38,
+        "percent": 3.42
+      },
+      "#3C82F0": {
+        "name": "Blue",
+        "hex": "#3C82F0",
+        "count": 38,
+        "percent": 3.42
+      },
+      "#F3F5F8": {
+        "name": "White",
+        "hex": "#F3F5F8",
+        "count": 43,
+        "percent": 3.87
+      },
+      "#3C424E": {
+        "name": "Charcoal",
+        "hex": "#3C424E",
+        "count": 44,
+        "percent": 3.96
+      },
+      "#E650BE": {
+        "name": "Magenta",
+        "hex": "#E650BE",
+        "count": 44,
+        "percent": 3.96
+      },
+      "#F06028": {
+        "name": "Orange",
+        "hex": "#F06028",
+        "count": 44,
+        "percent": 3.96
+      },
+      "#8250DC": {
+        "name": "Purple",
+        "hex": "#8250DC",
+        "count": 45,
+        "percent": 4.05
+      },
+      "#6EC850": {
+        "name": "Green",
+        "hex": "#6EC850",
+        "count": 46,
+        "percent": 4.14
+      },
+      "#C49252": {
+        "name": "Blond",
+        "hex": "#C49252",
+        "count": 47,
+        "percent": 4.23
+      },
+      "#28B4AA": {
+        "name": "Teal",
+        "hex": "#28B4AA",
+        "count": 48,
+        "percent": 4.32
+      },
+      "#1E5A3C": {
+        "name": "Pine Green",
+        "hex": "#1E5A3C",
+        "count": 51,
+        "percent": 4.59
+      },
+      "#C83C28": {
+        "name": "Red",
+        "hex": "#C83C28",
+        "count": 51,
+        "percent": 4.59
+      },
+      "#FAC828": {
+        "name": "Yellow",
+        "hex": "#FAC828",
+        "count": 52,
+        "percent": 4.68
+      },
+      "#FF603C": {
+        "name": "Coral",
+        "hex": "#FF603C",
+        "count": 52,
+        "percent": 4.68
+      },
+      "#FF82AA": {
+        "name": "Pink",
+        "hex": "#FF82AA",
+        "count": 52,
+        "percent": 4.68
+      },
+      "#8C5A2C": {
+        "name": "Chestnut",
+        "hex": "#8C5A2C",
+        "count": 53,
+        "percent": 4.77
+      },
+      "#A88C60": {
+        "name": "Sandy",
+        "hex": "#A88C60",
+        "count": 54,
+        "percent": 4.86
+      },
+      "#783CA0": {
+        "name": "Violet",
+        "hex": "#783CA0",
+        "count": 55,
+        "percent": 4.95
+      },
+      "#7A281E": {
+        "name": "Auburn",
+        "hex": "#7A281E",
+        "count": 55,
+        "percent": 4.95
+      },
+      "#5AC8FF": {
+        "name": "Sky Blue",
+        "hex": "#5AC8FF",
+        "count": 58,
+        "percent": 5.221
+      }
+    },
+    "Eyes": {
+      "#FFB45A": {
+        "name": "Amber",
+        "hex": "#FFB45A",
+        "count": 30,
+        "percent": 2.7
+      },
+      "#F0F078": {
+        "name": "Lemon",
+        "hex": "#F0F078",
+        "count": 36,
+        "percent": 3.24
+      },
+      "#FF3C3C": {
+        "name": "Crimson",
+        "hex": "#FF3C3C",
+        "count": 41,
+        "percent": 3.69
+      },
+      "#FF821E": {
+        "name": "Tangerine",
+        "hex": "#FF821E",
+        "count": 44,
+        "percent": 3.96
+      },
+      "#FFFFFF": {
+        "name": "Pure White",
+        "hex": "#FFFFFF",
+        "count": 46,
+        "percent": 4.14
+      },
+      "#FF78C8": {
+        "name": "Bubblegum",
+        "hex": "#FF78C8",
+        "count": 49,
+        "percent": 4.41
+      },
+      "#0C0F14": {
+        "name": "X Black",
+        "hex": "#0C0F14",
+        "count": 50,
+        "percent": 4.5
+      },
+      "#3CFFBE": {
+        "name": "Aqua",
+        "hex": "#3CFFBE",
+        "count": 54,
+        "percent": 4.86
+      },
+      "#AA50F0": {
+        "name": "Amethyst",
+        "hex": "#AA50F0",
+        "count": 56,
+        "percent": 5.041
+      },
+      "#3CDC78": {
+        "name": "Emerald",
+        "hex": "#3CDC78",
+        "count": 58,
+        "percent": 5.221
+      },
+      "#5AC8FF": {
+        "name": "Ice Blue",
+        "hex": "#5AC8FF",
+        "count": 59,
+        "percent": 5.311
+      },
+      "#78FFF0": {
+        "name": "Turquoise",
+        "hex": "#78FFF0",
+        "count": 59,
+        "percent": 5.311
+      },
+      "#DC1E5A": {
+        "name": "Raspberry",
+        "hex": "#DC1E5A",
+        "count": 60,
+        "percent": 5.401
+      },
+      "#1D9BF0": {
+        "name": "X Blue",
+        "hex": "#1D9BF0",
+        "count": 61,
+        "percent": 5.491
+      },
+      "#FAC828": {
+        "name": "Gold",
+        "hex": "#FAC828",
+        "count": 62,
+        "percent": 5.581
+      },
+      "#FF508C": {
+        "name": "Hot Pink",
+        "hex": "#FF508C",
+        "count": 63,
+        "percent": 5.671
+      },
+      "#00DCDC": {
+        "name": "Cyan",
+        "hex": "#00DCDC",
+        "count": 65,
+        "percent": 5.851
+      },
+      "#8C64FF": {
+        "name": "Periwinkle",
+        "hex": "#8C64FF",
+        "count": 65,
+        "percent": 5.851
+      },
+      "#1E5ADC": {
+        "name": "Royal Blue",
+        "hex": "#1E5ADC",
+        "count": 66,
+        "percent": 5.941
+      },
+      "#C8FF5A": {
+        "name": "Lime",
+        "hex": "#C8FF5A",
+        "count": 87,
+        "percent": 7.831
+      }
+    },
+    "Suit": {
+      "#C8CCD4": {
+        "name": "Silver Grey",
+        "hex": "#C8CCD4",
+        "count": 14,
+        "percent": 1.26
+      },
+      "#F3F5F8": {
+        "name": "White",
+        "hex": "#F3F5F8",
+        "count": 31,
+        "percent": 2.79
+      },
+      "#181E2C": {
+        "name": "Midnight Navy",
+        "hex": "#181E2C",
+        "count": 48,
+        "percent": 4.32
+      },
+      "#781E22": {
+        "name": "Maroon",
+        "hex": "#781E22",
+        "count": 48,
+        "percent": 4.32
+      },
+      "#3C424E": {
+        "name": "Slate Grey",
+        "hex": "#3C424E",
+        "count": 52,
+        "percent": 4.68
+      },
+      "#5C3E22": {
+        "name": "Brown",
+        "hex": "#5C3E22",
+        "count": 54,
+        "percent": 4.86
+      },
+      "#1E5C2E": {
+        "name": "Forest Green",
+        "hex": "#1E5C2E",
+        "count": 56,
+        "percent": 5.041
+      },
+      "#145448": {
+        "name": "Teal",
+        "hex": "#145448",
+        "count": 57,
+        "percent": 5.131
+      },
+      "#243028": {
+        "name": "Moss",
+        "hex": "#243028",
+        "count": 57,
+        "percent": 5.131
+      },
+      "#5A6270": {
+        "name": "Steel Grey",
+        "hex": "#5A6270",
+        "count": 57,
+        "percent": 5.131
+      },
+      "#C8AA3C": {
+        "name": "Gold",
+        "hex": "#C8AA3C",
+        "count": 57,
+        "percent": 5.131
+      },
+      "#6E1E5A": {
+        "name": "Plum",
+        "hex": "#6E1E5A",
+        "count": 58,
+        "percent": 5.221
+      },
+      "#2E2820": {
+        "name": "Espresso",
+        "hex": "#2E2820",
+        "count": 59,
+        "percent": 5.311
+      },
+      "#3C2254": {
+        "name": "Deep Purple",
+        "hex": "#3C2254",
+        "count": 61,
+        "percent": 5.491
+      },
+      "#2C4664": {
+        "name": "Denim Blue",
+        "hex": "#2C4664",
+        "count": 62,
+        "percent": 5.581
+      },
+      "#8C929E": {
+        "name": "Light Grey",
+        "hex": "#8C929E",
+        "count": 62,
+        "percent": 5.581
+      },
+      "#1A3C6E": {
+        "name": "Navy",
+        "hex": "#1A3C6E",
+        "count": 63,
+        "percent": 5.671
+      },
+      "#101014": {
+        "name": "Black",
+        "hex": "#101014",
+        "count": 66,
+        "percent": 5.941
+      },
+      "#A06E28": {
+        "name": "Bronze",
+        "hex": "#A06E28",
+        "count": 67,
+        "percent": 6.031
+      },
+      "#482E1A": {
+        "name": "Cocoa",
+        "hex": "#482E1A",
+        "count": 82,
+        "percent": 7.381
+      }
+    },
+    "Shirt": {
+      "#AAC4E2": {
+        "name": "Pale Blue",
+        "hex": "#AAC4E2",
+        "count": 61,
+        "percent": 5.491
+      },
+      "#FAE2C8": {
+        "name": "Cream",
+        "hex": "#FAE2C8",
+        "count": 62,
+        "percent": 5.581
+      },
+      "#FAD0B0": {
+        "name": "Peach",
+        "hex": "#FAD0B0",
+        "count": 63,
+        "percent": 5.671
+      },
+      "#E8DAC4": {
+        "name": "Sand",
+        "hex": "#E8DAC4",
+        "count": 67,
+        "percent": 6.031
+      },
+      "#C8E2F0": {
+        "name": "Ice Blue",
+        "hex": "#C8E2F0",
+        "count": 71,
+        "percent": 6.391
+      },
+      "#CEEAD6": {
+        "name": "Mint",
+        "hex": "#CEEAD6",
+        "count": 73,
+        "percent": 6.571
+      },
+      "#EEE6AA": {
+        "name": "Butter",
+        "hex": "#EEE6AA",
+        "count": 73,
+        "percent": 6.571
+      },
+      "#FABEC8": {
+        "name": "Rose",
+        "hex": "#FABEC8",
+        "count": 73,
+        "percent": 6.571
+      },
+      "#DED6F6": {
+        "name": "Lavender",
+        "hex": "#DED6F6",
+        "count": 74,
+        "percent": 6.661
+      },
+      "#C6D6E8": {
+        "name": "Sky",
+        "hex": "#C6D6E8",
+        "count": 79,
+        "percent": 7.111
+      },
+      "#E2E8F0": {
+        "name": "Off White",
+        "hex": "#E2E8F0",
+        "count": 81,
+        "percent": 7.291
+      },
+      "#F3F5F8": {
+        "name": "White",
+        "hex": "#F3F5F8",
+        "count": 81,
+        "percent": 7.291
+      },
+      "#BCC8BE": {
+        "name": "Sage",
+        "hex": "#BCC8BE",
+        "count": 82,
+        "percent": 7.381
+      },
+      "#F0C8D2": {
+        "name": "Blush",
+        "hex": "#F0C8D2",
+        "count": 84,
+        "percent": 7.561
+      },
+      "#FFF6E8": {
+        "name": "Ivory",
+        "hex": "#FFF6E8",
+        "count": 87,
+        "percent": 7.831
+      }
+    },
+    "Skin": {
+      "#F2C79B": {
+        "name": "Fair",
+        "hex": "#F2C79B",
+        "count": 129,
+        "percent": 11.611
+      },
+      "#BA845A": {
+        "name": "Olive",
+        "hex": "#BA845A",
+        "count": 134,
+        "percent": 12.061
+      },
+      "#CE9264": {
+        "name": "Medium",
+        "hex": "#CE9264",
+        "count": 136,
+        "percent": 12.241
+      },
+      "#623C28": {
+        "name": "Deep Brown",
+        "hex": "#623C28",
+        "count": 137,
+        "percent": 12.331
+      },
+      "#845438": {
+        "name": "Brown",
+        "hex": "#845438",
+        "count": 137,
+        "percent": 12.331
+      },
+      "#FCDCBA": {
+        "name": "Porcelain",
+        "hex": "#FCDCBA",
+        "count": 141,
+        "percent": 12.691
+      },
+      "#E8B082": {
+        "name": "Light",
+        "hex": "#E8B082",
+        "count": 144,
+        "percent": 12.961
+      },
+      "#A8704A": {
+        "name": "Tan",
+        "hex": "#A8704A",
+        "count": 153,
+        "percent": 13.771
+      }
+    }
+  }
+}

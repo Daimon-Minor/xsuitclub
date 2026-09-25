@@ -1,0 +1,69 @@
+{
+  "name": "X Suit Club #0640",
+  "description": "A 64x64 pixel-art collector: a man in a suit whose eyes are the X (Twitter) logo glyph. Hand-authored grid (never an upscaled AI image), 6 hair designs, randomised X-eye colour, suit, shirt and skin tones. Flat single-colour symmetrical jacket, one uniform slim neck, no pocket square.",
+  "image": "https://daimon-minor.github.io/xsuitclub/png/0640.png",
+  "external_url": "https://x.com/",
+  "attributes": [
+    {
+      "trait_type": "Hair Style",
+      "value": "Classic Cut",
+      "frequency": 199,
+      "percent": 17.912
+    },
+    {
+      "trait_type": "Hair",
+      "value": "Purple",
+      "frequency": 45,
+      "percent": 4.05,
+      "hex": "#8250DC"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Lime",
+      "frequency": 87,
+      "percent": 7.831,
+      "hex": "#C8FF5A"
+    },
+    {
+      "trait_type": "Suit",
+      "value": "Midnight Navy",
+      "frequency": 48,
+      "percent": 4.32,
+      "hex": "#181E2C"
+    },
+    {
+      "trait_type": "Shirt",
+      "value": "Lavender",
+      "frequency": 74,
+      "percent": 6.661,
+      "hex": "#DED6F6"
+    },
+    {
+      "trait_type": "Skin",
+      "value": "Olive",
+      "frequency": 134,
+      "percent": 12.061,
+      "hex": "#BA845A"
+    },
+    {
+      "trait_type": "Rarity Tier",
+      "value": "Common"
+    }
+  ],
+  "rarity": {
+    "score": 89.4923,
+    "rank": 669,
+    "percentile": 60.216,
+    "tier": "Common",
+    "per_trait_score": {
+      "Hair Style": 5.5829,
+      "Hair": 24.6889,
+      "Eyes": 12.7701,
+      "Suit": 23.1458,
+      "Shirt": 15.0135,
+      "Skin": 8.291
+    }
+  },
+  "seed": 25329085,
+  "compiler": "pixel-art/gen:64x64 grid v3"
+}

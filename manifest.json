@@ -1,0 +1,3361 @@
+{
+  "count": 1111,
+  "outdir": "batch1111_64",
+  "seed_base": 20260925,
+  "canvas": "64x64",
+  "unique_colors": {
+    "hair": 24,
+    "eye": 20,
+    "suit": 20,
+    "shirt": 15,
+    "skin": 8
+  },
+  "hair_style_distribution": {
+    "classic": 199,
+    "side_part": 179,
+    "buzz": 182,
+    "spiky": 175,
+    "long": 194,
+    "fringe": 182
+  },
+  "unique_combos": 1111,
+  "problems": {},
+  "notes": {
+    "1": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "2": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "3": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "4": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "5": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "6": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "7": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "8": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "9": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "10": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "11": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "12": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "13": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "14": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "15": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "16": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "17": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "18": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "19": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "20": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "21": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "22": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "23": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "24": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "25": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "26": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "27": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "28": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "29": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "30": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "31": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "32": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "33": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "34": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "35": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "36": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "37": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "38": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "39": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "40": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "41": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "42": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "43": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "44": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "45": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "46": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "47": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "48": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "49": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "50": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "51": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "52": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "53": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "54": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "55": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "56": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "57": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "58": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "59": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "60": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "61": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "62": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "63": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "64": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "65": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "66": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "67": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "68": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "69": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "70": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "71": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "72": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "73": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "74": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "75": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "76": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "77": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "78": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "79": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "80": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "81": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "82": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "83": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "84": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "85": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "86": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "87": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "88": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "89": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "90": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "91": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "92": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "93": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "94": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "95": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "96": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "97": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "98": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "99": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "100": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "101": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "102": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "103": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "104": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "105": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "106": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "107": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "108": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "109": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "110": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "111": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "112": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "113": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "114": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "115": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "116": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "117": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "118": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "119": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "120": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "121": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "122": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "123": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "124": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "125": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "126": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "127": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "128": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "129": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "130": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "131": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "132": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "133": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "134": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "135": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "136": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "137": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "138": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "139": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "140": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "141": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "142": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "143": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "144": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "145": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "146": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "147": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "148": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "149": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "150": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "151": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "152": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "153": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "154": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "155": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "156": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "157": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "158": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "159": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "160": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "161": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "162": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "163": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "164": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "165": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "166": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "167": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "168": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "169": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "170": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "171": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "172": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "173": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "174": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "175": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "176": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "177": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "178": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "179": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "180": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "181": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "182": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "183": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "184": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "185": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "186": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "187": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "188": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "189": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "190": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "191": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "192": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "193": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "194": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "195": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "196": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "197": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "198": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "199": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "200": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "201": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "202": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "203": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "204": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "205": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "206": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "207": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "208": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "209": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "210": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "211": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "212": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "213": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "214": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "215": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "216": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "217": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "218": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "219": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "220": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "221": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "222": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "223": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "224": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "225": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "226": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "227": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "228": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "229": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "230": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "231": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "232": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "233": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "234": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "235": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "236": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "237": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "238": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "239": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "240": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "241": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "242": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "243": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "244": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "245": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "246": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "247": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "248": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "249": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "250": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "251": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "252": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "253": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "254": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "255": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "256": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "257": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "258": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "259": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "260": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "261": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "262": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "263": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "264": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "265": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "266": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "267": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "268": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "269": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "270": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "271": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "272": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "273": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "274": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "275": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "276": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "277": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "278": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "279": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "280": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "281": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "282": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "283": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "284": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "285": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "286": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "287": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "288": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "289": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "290": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "291": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "292": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "293": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "294": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "295": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "296": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "297": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "298": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "299": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "300": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "301": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "302": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "303": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "304": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "305": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "306": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "307": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "308": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "309": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "310": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "311": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "312": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "313": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "314": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "315": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "316": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "317": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "318": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "319": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "320": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "321": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "322": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "323": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "324": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "325": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "326": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "327": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "328": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "329": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "330": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "331": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "332": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "333": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "334": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "335": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "336": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "337": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "338": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "339": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "340": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "341": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "342": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "343": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "344": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "345": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "346": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "347": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "348": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "349": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "350": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "351": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "352": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "353": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "354": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "355": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "356": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "357": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "358": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "359": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "360": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "361": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "362": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "363": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "364": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "365": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "366": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "367": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "368": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "369": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "370": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "371": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "372": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "373": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "374": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "375": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "376": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "377": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "378": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "379": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "380": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "381": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "382": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "383": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "384": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "385": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "386": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "387": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "388": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "389": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "390": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "391": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "392": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "393": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "394": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "395": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "396": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "397": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "398": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "399": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "400": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "401": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "402": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "403": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "404": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "405": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "406": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "407": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "408": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "409": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "410": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "411": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "412": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "413": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "414": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "415": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "416": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "417": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "418": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "419": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "420": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "421": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "422": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "423": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "424": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "425": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "426": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "427": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "428": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "429": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "430": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "431": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "432": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "433": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "434": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "435": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "436": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "437": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "438": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "439": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "440": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "441": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "442": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "443": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "444": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "445": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "446": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "447": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "448": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "449": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "450": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "451": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "452": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "453": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "454": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "455": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "456": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "457": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "458": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "459": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "460": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "461": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "462": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "463": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "464": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "465": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "466": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "467": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "468": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "469": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "470": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "471": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "472": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "473": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "474": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "475": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "476": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "477": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "478": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "479": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "480": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "481": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "482": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "483": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "484": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "485": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "486": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "487": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "488": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "489": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "490": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "491": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "492": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "493": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "494": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "495": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "496": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "497": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "498": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "499": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "500": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "501": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "502": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "503": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "504": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "505": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "506": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "507": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "508": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "509": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "510": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "511": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "512": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "513": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "514": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "515": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "516": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "517": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "518": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "519": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "520": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "521": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "522": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "523": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "524": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "525": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "526": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "527": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "528": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "529": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "530": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "531": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "532": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "533": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "534": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "535": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "536": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "537": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "538": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "539": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "540": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "541": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "542": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "543": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "544": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "545": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "546": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "547": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "548": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "549": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "550": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "551": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "552": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "553": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "554": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "555": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "556": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "557": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "558": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "559": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "560": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "561": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "562": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "563": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "564": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "565": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "566": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "567": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "568": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "569": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "570": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "571": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "572": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "573": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "574": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "575": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "576": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "577": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "578": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "579": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "580": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "581": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "582": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "583": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "584": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "585": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "586": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "587": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "588": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "589": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "590": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "591": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "592": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "593": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "594": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "595": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "596": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "597": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "598": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "599": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "600": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "601": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "602": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "603": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "604": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "605": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "606": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "607": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "608": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "609": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "610": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "611": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "612": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "613": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "614": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "615": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "616": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "617": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "618": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "619": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "620": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "621": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "622": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "623": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "624": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "625": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "626": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "627": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "628": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "629": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "630": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "631": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "632": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "633": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "634": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "635": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "636": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "637": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "638": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "639": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "640": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "641": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "642": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "643": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "644": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "645": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "646": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "647": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "648": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "649": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "650": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "651": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "652": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "653": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "654": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "655": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "656": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "657": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "658": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "659": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "660": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "661": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "662": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "663": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "664": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "665": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "666": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "667": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "668": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "669": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "670": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "671": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "672": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "673": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "674": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "675": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "676": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "677": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "678": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "679": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "680": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "681": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "682": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "683": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "684": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "685": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "686": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "687": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "688": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "689": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "690": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "691": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "692": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "693": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "694": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "695": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "696": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "697": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "698": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "699": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "700": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "701": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "702": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "703": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "704": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "705": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "706": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "707": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "708": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "709": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "710": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "711": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "712": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "713": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "714": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "715": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "716": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "717": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "718": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "719": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "720": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "721": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "722": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "723": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "724": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "725": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "726": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "727": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "728": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "729": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "730": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "731": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "732": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "733": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "734": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "735": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "736": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "737": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "738": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "739": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "740": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "741": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "742": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "743": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "744": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "745": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "746": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "747": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "748": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "749": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "750": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "751": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "752": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "753": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "754": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "755": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "756": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "757": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "758": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "759": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "760": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "761": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "762": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "763": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "764": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "765": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "766": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "767": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "768": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "769": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "770": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "771": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "772": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "773": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "774": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "775": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "776": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "777": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "778": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "779": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "780": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "781": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "782": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "783": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "784": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "785": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "786": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "787": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "788": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "789": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "790": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "791": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "792": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "793": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "794": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "795": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "796": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "797": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "798": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "799": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "800": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "801": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "802": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "803": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "804": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "805": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "806": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "807": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "808": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "809": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "810": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "811": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "812": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "813": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "814": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "815": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "816": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "817": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "818": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "819": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "820": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "821": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "822": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "823": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "824": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "825": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "826": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "827": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "828": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "829": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "830": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "831": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "832": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "833": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "834": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "835": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "836": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "837": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "838": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "839": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "840": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "841": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "842": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "843": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "844": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "845": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "846": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "847": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "848": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "849": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "850": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "851": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "852": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "853": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "854": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "855": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "856": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "857": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "858": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "859": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "860": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "861": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "862": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "863": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "864": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "865": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "866": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "867": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "868": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "869": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "870": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "871": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "872": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "873": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "874": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "875": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "876": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "877": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "878": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "879": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "880": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "881": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "882": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "883": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "884": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "885": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "886": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "887": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "888": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "889": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "890": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "891": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "892": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "893": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "894": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "895": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "896": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "897": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "898": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "899": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "900": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "901": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "902": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "903": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "904": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "905": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "906": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "907": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "908": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "909": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "910": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "911": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "912": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "913": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "914": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "915": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "916": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "917": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "918": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "919": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "920": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "921": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "922": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "923": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "924": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "925": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "926": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "927": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "928": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "929": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "930": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "931": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "932": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "933": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "934": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "935": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "936": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "937": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "938": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "939": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "940": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "941": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "942": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "943": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "944": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "945": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "946": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "947": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "948": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "949": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "950": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "951": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "952": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "953": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "954": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "955": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "956": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "957": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "958": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "959": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "960": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "961": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "962": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "963": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "964": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "965": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "966": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "967": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "968": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "969": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "970": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "971": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "972": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "973": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "974": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "975": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "976": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "977": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "978": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "979": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "980": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "981": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "982": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "983": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "984": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "985": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "986": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "987": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "988": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "989": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "990": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "991": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "992": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "993": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "994": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "995": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "996": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "997": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "998": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "999": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1000": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1001": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1002": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1003": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1004": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1005": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1006": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1007": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1008": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1009": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1010": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1011": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1012": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1013": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1014": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1015": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1016": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1017": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1018": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1019": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1020": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1021": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1022": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1023": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1024": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1025": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1026": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1027": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1028": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1029": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1030": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1031": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1032": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1033": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1034": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1035": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1036": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1037": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1038": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1039": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1040": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1041": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1042": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1043": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1044": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1045": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1046": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1047": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1048": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1049": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1050": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1051": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1052": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1053": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1054": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1055": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1056": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1057": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1058": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1059": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1060": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1061": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1062": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1063": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1064": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1065": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1066": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1067": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1068": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1069": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1070": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1071": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1072": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1073": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1074": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1075": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1076": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1077": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1078": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1079": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1080": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1081": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1082": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1083": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1084": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1085": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1086": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1087": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1088": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1089": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1090": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1091": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1092": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1093": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1094": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1095": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1096": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1097": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1098": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1099": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1100": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1101": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1102": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1103": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1104": [
+      "colour-asym=48px (nose/tie shading)"
+    ],
+    "1105": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1106": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1107": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1108": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1109": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1110": [
+      "colour-asym=38px (nose/tie shading)"
+    ],
+    "1111": [
+      "colour-asym=38px (nose/tie shading)"
+    ]
+  },
+  "fail_count": 0,
+  "noted_count": 1111,
+  "seconds": 7.58
+}

@@ -1,0 +1,16 @@
+{
+  "name": "X Suit Club",
+  "description": "1111 hand-authored 64x64 pixel-art suit characters with X-logo eyes.",
+  "image": "https://daimon-minor.github.io/xsuitclub/png/collection.png",
+  "external_link": "https://x.com/",
+  "supply": 1111,
+  "schema": "ERC-721 metadata (OpenSea compatible)",
+  "traits": {
+    "Hair Style": 6,
+    "Hair": 24,
+    "Eyes": 20,
+    "Suit": 20,
+    "Shirt": 15,
+    "Skin": 8
+  }
+}
